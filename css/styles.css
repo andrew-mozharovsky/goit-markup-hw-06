@@ -536,6 +536,9 @@ ul {
   display: flex;
   flex-direction: column;
 }
+.footer-mai-input .helper::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
 .footer-mai-input label {
   font-weight: 700;
   font-size: 14px;
@@ -707,6 +710,9 @@ ul {
   padding-left: 16px;
 
   height: 120px;
+}
+.modal-content-imput.coments::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 .modal-content-icon {
   position: absolute;
