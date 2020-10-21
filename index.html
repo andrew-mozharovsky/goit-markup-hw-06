@@ -369,21 +369,46 @@
           <use href="./images/sprite.svg#icon-close"></use>
         </svg></button>
         <div class="modal-content">
-          <p>Оставьте свои данные, мы вам перезвоним</p>
-          <label for="user-name">Имя</label>
-          <input type="text" name="user-name" id="user-name">
-          <label for="user-phone">Телефон</label>
-          <input type="tel" name="user-phone" id="user-phone">
-          <label for="user-mail">Почта</label>
-          <input type="email" name="user-mail" id="user-mail">
-          <label for="user-comments">Комментарий</label>
-          <textarea name="user-comments" id="user-comments" rows="10" placeholder="Введите текст"></textarea>
-          <label for="user-contract">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-          <input type="checkbox" name="user-contract" id="user-contract">
-          <button type="submit">Отправить</button>
+          <p class="title">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="modal-content-label">
+            Имя
+            <input class="modal-content-imput" type="text" name="user-name">
+            <svg class="modal-content-icon" width="18px" height="18px">
+              <use href="./images/sprite.svg#icon-person-black"></use>
+            </svg>
+          </label>
+           <label class="modal-content-label">
+              Телефон
+            <input class="modal-content-imput" type="tel" name="user-phone"> 
+            <svg class="modal-content-icon" width="18px" height="18px">
+              <use href="./images/sprite.svg#icon-phone-black"></use>
+            </svg>
+          </label>          
+          <label class="modal-content-label">
+            Почта
+            <input class="modal-content-imput" type="email" name="user-mail"> 
+            <svg class="modal-content-icon" width="18px" height="18px">
+              <use href="./images/sprite.svg#icon-email-black"></use>
+            </svg>
+          </label>          
+          <label class="modal-content-label">
+            Комментарий
+            <textarea class="modal-content-imput coments" name="user-comments" rows="10" placeholder="Введите текст"></textarea>
+            
+          </label>          
+          <label class="modal-content-check">
+            <input class="modal-input-check hidden" type="checkbox" name="user-contract" >
+            <a class="link" href="">Условия договора</a>Соглашаюсь с рассылкой и принимаю 
+            <div class="input-check-castom"><svg width="14px" height="13px">
+              <use href="./images/sprite.svg#icon-check"></use>
+            </svg>
+          </div>
+          </label>
+                    
+          <button class="modal-content-button" type="submit">Отправить</button>
         </div>
       </div>
     </div>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
